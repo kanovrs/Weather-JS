@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  min-width: 100px;
+  min-height: 100vh;
+  padding: 50px;
+  transition: background-image 0.3s ease;
+  background-image: linear-gradient(to top, rgba(51, 51, 51, 0.3), rgba(51, 51, 51, 0.3)), url("../images/day_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+img {
+  width: 100%;
+}
+
+.wraper {
+  display: flex;
+  max-width: 1200px;
+  min-width: 320px;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 30%;
+  min-width: 20%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.8);
+}
+.sidebar__search {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+  margin-top: 20px;
+  position: relative;
+}
+.sidebar__search input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ced4da;
+  border-bottom-left-radius: 4px;
+  padding: 0 15px;
+  font-size: 14px;
+  color: #495054;
+}
+.sidebar__search input:focus {
+  outline: none;
+  border: 1px solid #53a6cb;
+}
+.sidebar__search button {
+  min-width: 40px;
+  height: 40px;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: #53a6cb;
+  color: white;
+  cursor: pointer;
+}
+
+.weather-icon {
+  width: 100%;
+  height: 100px;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.weather-icon #icon {
+  width: 40%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.cloudy {
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+  font-size: 14px;
+  text-transform: capitalize;
+}
+
+.rain {
+  display: flex;
+  gap: 5px;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
+.location {
+  display: flex;
+  gap: 5px;
+  font-size: 14px;
+}
+
+.main {
+  width: 100%;
+  min-width: 400px;
+  padding: 20px 40px;
+  position: relative;
+  padding-bottom: 90px;
+  background-color: #e6e6e6;
+}
+.main nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+.options button {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  color: rgb(57, 57, 57);
+}
+.options button.active {
+  color: #53a6cb;
+}
+
+.units button {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  color: #1a1a1a;
+  background-color: #fff;
+}
+.units button.active {
+  color: #fff;
+  background-color: #1a1a1a;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin-top: 20px;
+  justify-content: center;
+}
+.cards__item {
+  width: 100px;
+  height: 130px;
+  border-radius: 20px;
+  color: #1a1a1a;
+  background-color: #fff;
+  text-align: center;
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cards__name {
+  font-size: 15px;
+  font-weight: 600;
+}
+.cards__img {
+  width: 50%;
+  margin: 0 auto;
+}
+.cards__temp {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cards__temp-bold {
+  font-weight: 600;
+}
+
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.details__cards {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.details__tittle {
+  width: 100%;
+  font-weight: 600;
+}
+.details__item {
+  width: 30%;
+  height: 150px;
+  border-radius: 20px;
+  color: #1a1a1a;
+  background-color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.details__item-tittle {
+  font-size: 20px;
+}
+.details__item-value {
+  text-align: center;
+  font-size: 30px;
+}
+
+.temperature {
+  display: flex;
+}
+.temperature__tittle {
+  font-size: 70px;
+  font-weight: 100;
+  line-height: 1;
+}
+.temperature__unit {
+  font-size: 40px;
+  margin-top: -10px;
+  display: block;
+}/*# sourceMappingURL=style.css.map */

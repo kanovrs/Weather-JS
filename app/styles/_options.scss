@@ -1,0 +1,16 @@
+.options {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  & button {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    font-weight: 600;
+    color: rgb(57, 57, 57);
+
+    &.active {
+      color: #53a6cb;
+    }
+  }
+}

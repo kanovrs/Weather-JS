@@ -1,0 +1,33 @@
+.details {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  &__cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  &__tittle {
+    width: 100%;
+    font-weight: 600;
+  }
+  &__item {
+    width: 30%;
+    height: 150px;
+    border-radius: 20px;
+    color: #1a1a1a;
+    background-color: #fff;
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    &-tittle {
+      font-size: 20px;
+    }
+    &-value {
+      text-align: center;
+      font-size: 30px;
+    }
+  }
+}

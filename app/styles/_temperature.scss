@@ -1,0 +1,13 @@
+.temperature {
+  display: flex;
+  &__tittle {
+    font-size: 70px;
+    font-weight: 100;
+    line-height: 1;
+  }
+  &__unit {
+    font-size: 40px;
+    margin-top: -10px;
+    display: block;
+  }
+}
